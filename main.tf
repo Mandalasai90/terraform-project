@@ -25,7 +25,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = ami-074f77adfeee318d3""
+  ami             = "ami-074f77adfeee318d3"
   instance_type   = "t2.micro"
   key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.three.id]
