@@ -6,7 +6,7 @@ secret_key = "JV0suBQg21lAs0UmJUYzNzi9m5oM4yR3paViFThd"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-02a2af70a66af6dfb "
+  ami             = "ami-074f77adfeee318d3"
   instance_type   = "t2.micro"
   key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.three.id]
@@ -25,7 +25,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-02a2af70a66af6dfb"
+  ami             = ami-074f77adfeee318d3""
   instance_type   = "t2.micro"
   key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.three.id]
